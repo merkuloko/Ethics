@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A1101 Ethics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+    </style>
+</head>
+<body>
+<div class="survey-container">
+  <h2>Professional Code of Ethics Awareness Survey</h2>
+
+
+  <p><strong>Welcome to our survey on the Professional Code of Ethics for Accountancy students.</strong></p>
+  <p>
+  We are students from Mapúa Malayan Digital College (a college under Mapúa Malayan Colleges Laguna). This survey is part of our course requirement for MO-HUM039 – Ethics, Term 3, SY 2024–2025, General Education – A1103.
+  </p>
+  <p>Your participation will help us understand how well incoming 2nd-year accountancy students are familiar with the ethical foundations essential in their profession. Your insights will contribute to developing better educational strategies that promote integrity, responsibility, and ethical practice among future accountants.</p>
+
+  <p>This survey will take approximately 4 minutes to complete. Please answer each question as honestly and thoughtfully as possible. All responses are strictly anonymous and will be used solely for educational and research purposes. Thank you!</p>
+
+  <h3>Consent Form</h3>
+  <p>
+    We are committed to protecting your privacy and ensuring the confidentiality of your responses, in compliance with the Data Privacy Act of 2012 (RA 10173).
+    No personally identifiable information will be collected. Data will be stored securely, accessible only to authorized researchers, and will be deleted after 2 months.
+    Your participation is voluntary, and you may skip questions or exit the survey at any time without consequence.
+  </p>
+  <p>
+    <strong>By proceeding, you confirm that you have read and understood the above statement and voluntarily agree to participate in this survey.</strong>
+  </p>
+  <input type="radio" name="aggree" value="Yes" required> Yes<br><br>
+
+  <form id="surveyForm">
+
+    <label>1. Have you heard of the Professional Code of Ethics for Accountants?</label><br>
+    <input type="radio" name="heard" value="Yes" required> Yes<br>
+    <input type="radio" name="heard" value="No"> No<br><br>
+
+    <label>2. What best describes professional ethics in accounting?</label><br>
+    <input type="radio" name="ethics" value="Knowing what's right or wrong"> Knowing what's right or wrong<br>
+    <input type="radio" name="ethics" value="Following rules and values in accounting work"> Following rules and values in accounting work<br>
+    <input type="radio" name="ethics" value="Doing what you feel is right"> Doing what you feel is right<br><br>
+
+    <label>3. Which of the following is part of the Professional Code of Ethics?</label><br>
+    <input type="radio" name="principle" value="Creativity"> Creativity<br>
+    <input type="radio" name="principle" value="Integrity"> Integrity<br>
+    <input type="radio" name="principle" value="Popularity"> Popularity<br><br>
+
+    <label>4. Why is integrity important in accounting?</label><br>
+    <input type="radio" name="integrity" value="To impress others"> To impress others<br>
+    <input type="radio" name="integrity" value="To ensure honesty and trust"> To ensure honesty and trust<br>
+    <input type="radio" name="integrity" value="To get high grades"> To get high grades<br><br>
+
+    <label>5. What might happen if accountants are not objective?</label><br>
+    <input type="radio" name="objectivity" value="The work becomes more creative"> The work becomes more creative<br>
+    <input type="radio" name="objectivity" value="It may result in bias or unfair financial reporting"> It may result in bias or unfair financial reporting<br>
+    <input type="radio" name="objectivity" value="Nothing will happen"> Nothing will happen<br><br>
+
+    <label>6. Did you learn about ethics in any of your first-year subjects?</label><br>
+    <input type="radio" name="learned_ethics" value="Yes" required> Yes<br>
+    <input type="radio" name="learned_ethics" value="No"> No<br><br>
+
+    <label>7. Which of these shows professional behavior?</label><br>
+    <input type="radio" name="behavior" value="Skipping deadlines"> Skipping deadlines<br>
+    <input type="radio" name="behavior" value="Being honest in reports"> Being honest in reports<br>
+    <input type="radio" name="behavior" value="Taking shortcuts in work"> Taking shortcuts in work<br><br>
+
+    <label>8. What does confidentiality mean in accounting?</label><br>
+    <input type="radio" name="confidentiality" value="Keeping client information private"> Keeping client information private<br>
+    <input type="radio" name="confidentiality" value="Talking about work with friends"> Talking about work with friends<br>
+    <input type="radio" name="confidentiality" value="Posting data online"> Posting data online<br><br>
+
+    <label>9. Is ethics as important as technical knowledge in accounting?</label><br>
+    <input type="radio" name="ethics_importance" value="Yes" required> Yes<br>
+    <input type="radio" name="ethics_importance" value="No"> No<br>
+    <input type="radio" name="ethics_importance" value="Not sure"> Not sure<br><br>
+
+    <label>10. Which value should every future accountant have?</label><br>
+    <input type="radio" name="value" value="Integrity"> Integrity<br>
+    <input type="radio" name="value" value="Fame"> Fame<br>
+    <input type="radio" name="value" value="Luck"> Luck<br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+    <!-- Thank You Message -->
+    <div id="thankYouMessage" class="hidden">🌸 Thank you for answering!</div>
+
+
+    <!-- Text Message -->
+    <div id="textMessage" class="container hidden">
+      <h1>(text)</h1>
+      <p>(text)</p>
+      <p>(text)</p>
+      <button onclick="alert('Thank you for reading this.')">(text)</button>
+    </div>
+
+    <!-- Tulip Image -->
+    <div class="tulip-image hidden" id="tulipImage" style="position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); z-index: 2; display: none;">
+      <img src="{{ url_for('static', filename='tulip.png') }}" alt="Tulip" style="width: 1300px; height: auto; display: none;" id="tulipImageImg" />
+    </div>
+
+    <!-- Fireflies -->
+    <div id="fireflyContainer" class="hidden">
+      <div class="firefly" style="top:20%; left:10%; animation-delay: 0s;"></div>
+      <div class="firefly" style="top:30%; left:30%; animation-delay: 1s;"></div>
+      <div class="firefly" style="top:40%; left:70%; animation-delay: 2s;"></div>
+      <div class="firefly" style="top:50%; left:50%; animation-delay: 3s;"></div>
+      <div class="firefly" style="top:60%; left:50%; animation-delay: 3s;"></div>
+      <div class="firefly" style="top:65%; left:20%; animation-delay: 4s;"></div>
+      <div class="firefly" style="top:25%; left:80%; animation-delay: 5s;"></div>
+      <div class="firefly" style="top:35%; left:60%; animation-delay: 6s;"></div>
+      <div class="firefly" style="top:75%; left:40%; animation-delay: 7s;"></div>
+      <div class="firefly" style="top:15%; left:90%; animation-delay: 8s;"></div>
+      <div class="firefly" style="top:12%; left:12%; animation-delay: 1.2s;"></div>
+      <div class="firefly" style="top:67%; left:77%; animation-delay: 4.7s;"></div>
+      <div class="firefly" style="top:80%; left:22%; animation-delay: 6.2s;"></div>
+      <div class="firefly" style="top:55%; left:73%; animation-delay: 2.8s;"></div>
+      <div class="firefly" style="top:41%; left:18%; animation-delay: 2.3s;"></div>
+      <div class="firefly" style="top:23%; left:68%; animation-delay: 1.6s;"></div>
+      <div class="firefly" style="top:62%; left:38%; animation-delay: 8.2s;"></div>
+      <div class="firefly" style="top:49%; left:81%; animation-delay: 5.1s;"></div>
+      <div class="firefly" style="top:34%; left:44%; animation-delay: 7.1s;"></div>
+      <div class="firefly" style="top:16%; left:77%; animation-delay: 2.9s;"></div>
+      <div class="firefly" style="top:71%; left:12%; animation-delay: 4.2s;"></div>
+      <div class="firefly" style="top:58%; left:67%; animation-delay: 3.3s;"></div>
+      <div class="firefly" style="top:47%; left:27%; animation-delay: 6.8s;"></div>
+      <div class="firefly" style="top:39%; left:85%; animation-delay: 7.3s;"></div>
+      <div class="firefly" style="top:28%; left:38%; animation-delay: 2.2s;"></div>
+      <div class="firefly" style="top:77%; left:60%; animation-delay: 8.8s;"></div>
+      <div class="firefly" style="top:33%; left:31%; animation-delay: 3.7s;"></div>
+      <div class="firefly" style="top:21%; left:55%; animation-delay: 5.6s;"></div>
+      <div class="firefly" style="top:62%; left:12%; animation-delay: 6.9s;"></div>
+      <div class="firefly" style="top:19%; left:48%; animation-delay: 3.4s;"></div>
+      <div class="firefly" style="top:52%; left:92%; animation-delay: 7.9s;"></div>
+      <div class="firefly" style="top:11%; left:81%; animation-delay: 2.1s;"></div>
+      <div class="firefly" style="top:42%; left:16%; animation-delay: 5.2s;"></div>
+      <div class="firefly" style="top:60%; left:77%; animation-delay: 6.1s;"></div>
+      <div class="firefly" style="top:73%; left:53%; animation-delay: 8.4s;"></div>
+      <div class="firefly" style="top:25%; left:60%; animation-delay: 9.1s;"></div>
+      <div class="firefly" style="top:84%; left:27%; animation-delay: 7.8s;"></div>
+      <div class="firefly" style="top:36%; left:73%; animation-delay: 1.7s;"></div>
+      <div class="firefly" style="top:59%; left:18%; animation-delay: 4.6s;"></div>
+      <div class="firefly" style="top:13%; left:71%; animation-delay: 5.9s;"></div>
+      <div class="firefly" style="top:47%; left:61%; animation-delay: 2.6s;"></div>
+      <div class="firefly" style="top:70%; left:44%; animation-delay: 3.6s;"></div>
+      <div class="firefly" style="top:22%; left:15%; animation-delay: 0.5s;"></div>
+      <div class="firefly" style="top:18%; left:85%; animation-delay: 1.5s;"></div>
+      <div class="firefly" style="top:33%; left:55%; animation-delay: 2.5s;"></div>
+      <div class="firefly" style="top:28%; left:25%; animation-delay: 3.5s;"></div>
+      <div class="firefly" style="top:45%; left:60%; animation-delay: 4.5s;"></div>
+      <div class="firefly" style="top:52%; left:70%; animation-delay: 5.5s;"></div>
+      <div class="firefly" style="top:68%; left:30%; animation-delay: 6.5s;"></div>
+      <div class="firefly" style="top:80%; left:65%; animation-delay: 7.5s;"></div>
+      <div class="firefly" style="top:10%; left:40%; animation-delay: 8.5s;"></div>
+      <div class="firefly" style="top:55%; left:20%; animation-delay: 9.5s;"></div>
+      <div class="firefly" style="top:12%; left:60%; animation-delay: 10s;"></div>
+      <div class="firefly" style="top:77%; left:85%; animation-delay: 11s;"></div>
+      <div class="firefly" style="top:39%; left:35%; animation-delay: 12s;"></div>
+      <div class="firefly" style="top:18%; left:45%; animation-delay: 13s;"></div>
+      <div class="firefly" style="top:24%; left:75%; animation-delay: 14s;"></div>
+      <div class="firefly" style="top:64%; left:25%; animation-delay: 15s;"></div>
+      <div class="firefly" style="top:53%; left:45%; animation-delay: 16s;"></div>
+      <div class="firefly" style="top:73%; left:15%; animation-delay: 17s;"></div>
+      <div class="firefly" style="top:36%; left:10%; animation-delay: 18s;"></div>
+      <div class="firefly" style="top:66%; left:90%; animation-delay: 19s;"></div>
+    </div>
+<script>
+  document.getElementById('surveyForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const form = document.querySelector('.survey-container');
+    const thankYou = document.getElementById('thankYouMessage');
+    const textMessage = document.getElementById('textMessage');
+    const fireflies = document.getElementById('fireflyContainer');
+    const tulipImage = document.getElementById('tulipImage');
+
+    form.style.display = 'none';
+    thankYou.classList.remove('hidden');
+    thankYou.classList.add('show');
+
+    setTimeout(() => {
+    thankYou.classList.remove('show');
+    thankYou.classList.add('hidden');
+
+    tulipImage.style.display = 'block';
+    document.getElementById('tulipImageImg').style.display = 'block';
+    tulipImage.classList.remove('hidden');
+    textMessage.classList.remove('hidden');
+    textMessage.classList.add('show');
+    fireflies.classList.remove('hidden');
+  }, 2000);
+    });
+</script>
+</body>
+</html>
