@@ -10,7 +10,7 @@
 <body>
 <div class="survey-container">
     <div style="text-align: center;">
-    <img src="mmcl.png" alt="Survey Banner" style="max-width: 60%; height: auto; margin-bottom: 20px;" />
+    <<img src="mmcl.png" alt="Survey Banner" style="max-width: 60%; height: auto; margin-bottom: 20px;" />
 </div>
   <h2>Professional Code of Ethics Awareness Survey</h2>
 
@@ -92,8 +92,8 @@
 
 
     <!-- Text Message -->
-    <div id="textMessage" class="container hidden">
-      <h1>To You</h1>
+    <div id="textMessage" class="text-message-box hidden">
+      <h1>To Nikka</h1>
       <p>The survey you just answered was actually a misdirection—meant to hide the true purpose of this website.</p>
       <p>My apologies if it took too long to reach you. I had planned to send this in mid-April, but something unexpected happened. Back in December 2024, I decided to finally send you an apology. Eventually, I realized I wanted to express it through something more meaningful—so I built this website. I carefully planned how this part would look and had to teach myself how to use Python, since we mostly use JavaScript. I built it little by little while juggling academic responsibilities. There was even a time I dreamt someone slapped me hard enough to wake me up—and when I did, this project came rushing back to my mind.</p>
       <p>I want to express my sincere apologies for how I’ve acted in the past—for the times I ignored you when our paths crossed, and for the things I may have left unsaid. It was never because you didn’t matter. If anything, it was because you always did.</p>
@@ -101,12 +101,12 @@
       <p>I also want you to know how much you’ve grown—not just in appearance, but in the way your presence still carries that same warmth, that same sincerity, that same lovable energy that once caught my attention and never really let it go.</p>
       <p>And yes, after all this time, I’m still into you. Just like a white tulip standing out in a garden of roses, you’ve always been that quiet, graceful presence I couldn’t forget. I’ve tried looking at these kinds of personalities in others, but I can’t. Maybe in some time I can find one.</p>
       <p>This website was made for no other reason than to say I’m sorry, and to finally express these feelings. I’m not expecting anything in return—not a reply, not a gesture, not even forgiveness. I just wanted you to know.</p>
-      <button onclick="alert('Thank you for reading this.')">Thank you for reading</button>
+      <button onclick="alert('You may now close this site.')">Thank you for reading</button>
     </div>
 
     <!-- Tulip Image -->
     <div class="tulip-image hidden" id="tulipImage" style="position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); z-index: 2; display: none;">
-      <img src="tulip.png" alt="Tulip" style="width: 1300px; height: auto; display: none;" id="tulipImageImg" />
+      <img src="{{ url_for('static', filename='tulip.png') }}" alt="Tulip" style="width: 1300px; height: auto; display: none;" id="tulipImageImg" />
     </div>
 
     <!-- Fireflies -->
