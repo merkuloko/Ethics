@@ -2,81 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title ito.</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>A1101 Ethics</title>
+    <link rel="stylesheet" href="style.css">
     <style>
     </style>
 </head>
 <body>
 <div class="survey-container">
     <div style="text-align: center;">
-    <img src="{{ url_for('static', filename='.png') }}" alt="Survey Banner" style="max-width: 60%; height: auto; margin-bottom: 20px;" />
+    <img src="mmcl.png" alt="Survey Banner" style="max-width: 60%; height: auto; margin-bottom: 20px;" />
 </div>
-  <h2>Mock Survey</h2>
+  <h2>Professional Code of Ethics Awareness Survey</h2>
 
 
-  <p><strong>Title</strong></p>
-  <p>Description po ito(1)</p>
-  <p>Description po ito(2)</p>
-
-  <p>Description po ito(3)</p>
-
-  <h3>Description po ito(4)</h3>
-  <p>Description po ito(5)</p>
+  <p><strong>Welcome to our survey on the Professional Code of Ethics for Accountancy students.</strong></p>
   <p>
-    <strong>Description po ito(6)</strong>
+  We are students from Mapúa Malayan Digital College (a college under Mapúa Malayan Colleges Laguna). This survey is part of our course requirement for MO-HUM039 – Ethics, Term 3, SY 2024–2025, General Education – A1103.
+  </p>
+  <p>Your participation will help us understand how well incoming 2nd-year accountancy students are familiar with the ethical foundations essential in their profession. Your insights will contribute to developing better educational strategies that promote integrity, responsibility, and ethical practice among future accountants.</p>
+
+  <p>This survey will take approximately 4 minutes to complete. Please answer each question as honestly and thoughtfully as possible. All responses are strictly anonymous and will be used solely for educational and research purposes. Thank you!</p>
+
+  <h3>Consent Form</h3>
+  <p>
+    We are committed to protecting your privacy and ensuring the confidentiality of your responses, in compliance with the Data Privacy Act of 2012 (RA 10173).
+    No personally identifiable information will be collected. Data will be stored securely, accessible only to authorized researchers, and will be deleted after 2 months.
+    Your participation is voluntary, and you may skip questions or exit the survey at any time without consequence.
+  </p>
+  <p>
+    <strong>By proceeding, you confirm that you have read and understood the above statement and voluntarily agree to participate in this survey.</strong>
   </p>
   <input type="radio" name="aggree" value="Yes" required> Yes<br><br>
 
   <form id="surveyForm">
 
-    <label>Q1</label><br>
-    <input type="radio" name="name1" value="Option1Q1" required> Option1Q1<br>
-    <input type="radio" name="name2" value="Option2Q1"> Option2Q1<br><br>
+    <label>1. Have you heard of the Professional Code of Ethics for Accountants?</label><br>
+    <input type="radio" name="heard" value="Yes" required> Yes<br>
+    <input type="radio" name="heard" value="No"> No<br><br>
 
-    <label>Q2</label><br>
-    <input type="radio" name="name3" value="Option1Q2"> Option1Q2<br>
-    <input type="radio" name="name4" value="Option2Q2"> Option2Q2<br>
-    <input type="radio" name="name5" value="Option3Q2"> Option3Q2<br><br>
+    <label>2. What best describes professional ethics in accounting?</label><br>
+    <input type="radio" name="ethics" value="Knowing what's right or wrong"> Knowing what's right or wrong<br>
+    <input type="radio" name="ethics" value="Following rules and values in accounting work"> Following rules and values in accounting work<br>
+    <input type="radio" name="ethics" value="Doing what you feel is right"> Doing what you feel is right<br><br>
 
-    <label>Q3</label><br>
-    <input type="radio" name="name6" value="Option1Q3"> Option1Q3<br>
-    <input type="radio" name="name7" value="Option2Q3"> Option2Q3<br>
-    <input type="radio" name="name8" value="Option3Q3"> Option3Q3<br><br>
+    <label>3. Which of the following is part of the Professional Code of Ethics?</label><br>
+    <input type="radio" name="principle" value="Creativity"> Creativity<br>
+    <input type="radio" name="principle" value="Integrity"> Integrity<br>
+    <input type="radio" name="principle" value="Popularity"> Popularity<br><br>
 
-    <label>Q4</label><br>
-    <input type="radio" name="name9" value="Option1Q4"> Option1Q4<br>
-    <input type="radio" name="name10" value="Option2Q4"> Option2Q4<br>
-    <input type="radio" name="name11" value="Option3Q4"> Option3Q4<br><br>
+    <label>4. Why is integrity important in accounting?</label><br>
+    <input type="radio" name="integrity" value="To impress others"> To impress others<br>
+    <input type="radio" name="integrity" value="To ensure honesty and trust"> To ensure honesty and trust<br>
+    <input type="radio" name="integrity" value="To get high grades"> To get high grades<br><br>
 
-    <label>Q5</label><br>
-    <input type="radio" name="name12" value="Option1Q5"> Option1Q5<br>
-    <input type="radio" name="name13" value="Option2Q5"> Option2Q5<br>
-    <input type="radio" name="name14" value="Option3Q5"> Option3Q5<br><br>
+    <label>5. What might happen if accountants are not objective?</label><br>
+    <input type="radio" name="objectivity" value="The work becomes more creative"> The work becomes more creative<br>
+    <input type="radio" name="objectivity" value="It may result in bias or unfair financial reporting"> It may result in bias or unfair financial reporting<br>
+    <input type="radio" name="objectivity" value="Nothing will happen"> Nothing will happen<br><br>
 
-    <label>Q6</label><br>
-    <input type="radio" name="name15" value="Option1Q6" required> Option1Q6<br>
-    <input type="radio" name="name16" value="Option2Q6"> Option2Q6<br><br>
+    <label>6. Did you learn about ethics in any of your first-year subjects?</label><br>
+    <input type="radio" name="learned_ethics" value="Yes" required> Yes<br>
+    <input type="radio" name="learned_ethics" value="No"> No<br><br>
 
-    <label>Q7</label><br>
-    <input type="radio" name="name17" value="Option1Q7"> Option1Q7<br>
-    <input type="radio" name="name18" value="Option2Q7"> Option2Q7<br>
-    <input type="radio" name="name19" value="Option3Q7"> Option3Q7<br><br>
+    <label>7. Which of these shows professional behavior?</label><br>
+    <input type="radio" name="behavior" value="Skipping deadlines"> Skipping deadlines<br>
+    <input type="radio" name="behavior" value="Being honest in reports"> Being honest in reports<br>
+    <input type="radio" name="behavior" value="Taking shortcuts in work"> Taking shortcuts in work<br><br>
 
-    <label>Q8</label><br>
-    <input type="radio" name="name20" value="Option1Q8"> Option1Q8<br>
-    <input type="radio" name="name21" value="Option2Q8"> Option2Q8<br>
-    <input type="radio" name="name22" value="Option3Q8"> Option3Q8<br><br>
+    <label>8. What does confidentiality mean in accounting?</label><br>
+    <input type="radio" name="confidentiality" value="Keeping client information private"> Keeping client information private<br>
+    <input type="radio" name="confidentiality" value="Talking about work with friends"> Talking about work with friends<br>
+    <input type="radio" name="confidentiality" value="Posting data online"> Posting data online<br><br>
 
-    <label>Q9</label><br>
-    <input type="radio" name="name23" value="Option1Q9" required> Option1Q9<br>
-    <input type="radio" name="name24" value="Option2Q9"> Option2Q9<br>
-    <input type="radio" name="name25" value="Option3Q9"> Option3Q9<br><br>
+    <label>9. Is ethics as important as technical knowledge in accounting?</label><br>
+    <input type="radio" name="ethics_importance" value="Yes" required> Yes<br>
+    <input type="radio" name="ethics_importance" value="No"> No<br>
+    <input type="radio" name="ethics_importance" value="Not sure"> Not sure<br><br>
 
-    <label>Q10</label><br>
-    <input type="radio" name="name26" value="Option1Q10"> Option1Q10<br>
-    <input type="radio" name="name27" value="Option2Q10"> Option2Q10<br>
-    <input type="radio" name="name28" value="Option3Q10"> Option3Q10<br><br>
+    <label>10. Which value should every future accountant have?</label><br>
+    <input type="radio" name="value" value="Integrity"> Integrity<br>
+    <input type="radio" name="value" value="Fame"> Fame<br>
+    <input type="radio" name="value" value="Luck"> Luck<br><br>
 
     <button type="submit">Submit</button>
   </form>
@@ -87,14 +93,20 @@
 
     <!-- Text Message -->
     <div id="textMessage" class="text-message-box hidden">
-      <h1>Title ito.</h1>
-      <p>Paragraph po ito.</p>
+      <h1>To Nikka Yssabel Bernesto Gestalao</h1>
+      <p>The survey you just answered was actually a misdirection—meant to hide the true purpose of this website.</p>
+      <p>My apologies if it took too long to reach out to you. I had planned to send this in mid-April, but something unexpected happened. Back in December 2024, I decided to finally send you an apology. Eventually, I realized I wanted to express it through something more meaningful—so I built this website. I carefully planned how this part would look and had to teach myself how to use Python, since we mostly use JavaScript. I built it little by little while juggling academic responsibilities. There was even a time I dreamt someone slapped me hard enough to wake me up—and when I did, this project came rushing back to my mind.</p>
+      <p>I want to express my sincere apologies for how I’ve acted in the past—for the times I ignored you when our paths crossed, and for the things I may have left unsaid. It was never because you didn’t matter. If anything, it was because you always did.</p>
+      <p>It’s not that I didn’t care about you. I cared a lot. That’s why I got scared and didn’t know what to do.</p>
+      <p>I also want you to know how much you’ve grown—not just in appearance, but in the way your presence still carries that same warmth, that same sincerity, that same lovable energy that once caught my attention and never really let it go.</p>
+      <p>And yes, after all this time, I’m still into you. Just like a white tulip standing out in a garden of roses, you’ve always been that quiet, graceful presence I couldn’t forget. I’ve tried looking at these kinds of personalities in others, but I can’t. Maybe in some time I can find one.</p>
+      <p>This website was made for no other reason than to say I’m sorry. I’m not expecting anything in return—not a reply, not a gesture, not even forgiveness. I just wanted you to know.</p>
       <button onclick="alert('You may now close this site.')">Thank you for reading</button>
     </div>
 
     <!-- Tulip Image -->
     <div class="tulip-image hidden" id="tulipImage" style="position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); z-index: 2; display: none;">
-      <img src="{{ url_for('static', filename='tulip.png') }}" alt="Tulip" style="width: 1300px; height: auto; display: none;" id="tulipImageImg" />
+      <img src="tulip.png" alt="Tulip" style="width: 1300px; height: auto; display: none;" id="tulipImageImg" />
     </div>
 
     <!-- Fireflies -->
